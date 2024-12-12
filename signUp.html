@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan Express - Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        h1 {
+            background-color: rgb(26, 163, 26);
+            color: white;
+            text-align: center;
+            font-family: "Playwrite NZ", sans-serif;
+            font-size: 55px;
+            padding-top: -20px;
+            padding-bottom: 10px;
+            transition: 0.4s;
+        }
+        .myH1:hover h1 {
+            background-color: rgba(17, 114, 17, 0.952);
+            font-size: 58px;
+            border-bottom: 10px solid black;
+        }
+        h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 2vh;
+        }
+        .signUp {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6vh;
+        }
+        p {
+            text-align: center;
+            font-size: 22px;
+            padding: 1rem;
+            margin-bottom: 2vh;
+        }
+        button {
+            text-align: center;
+            width: 400px;
+            height: 60px;
+            border: none;
+            border-radius: 20px;
+            font-size: 22px;
+            margin-bottom: 0.8rem;
+            cursor: pointer;
+            transition: 0.6s;
+        }
+        .signUpGoogle:hover {
+            background-color: hsla(0, 3%, 62%, 0.712);
+        }
+        .google-blue {
+            fill: #4285F4;
+        }
+        .google-red {
+            fill: #EA4335;
+        }
+        .google-yellow {
+            fill: #FBBC05;
+        }
+        .google-green {
+            fill: #34A853;
+        }
+        .or::before {
+            content: '';
+            display: inline-block;
+            background-color: gray;
+            width: 200px;
+            height: 2px;
+            position: relative;
+            bottom: 5px;
+            right: 5px;
+        }
+        .or::after {
+            content: '';
+            display: inline-block;
+            background-color: gray;
+            width: 200px;
+            height: 2px;
+            position: relative;
+            bottom: 5px;
+            left: 5px;
+        }
+        .or {
+            margin-bottom: -0.5rem;
+        }
+        input {
+            width: 300px;
+            height: 40px;
+            padding: 5px;
+            font-size: 17px;
+        }
+        .submitBtn {
+            color: white;
+            background-color: hsl(224, 100%, 59%);
+            width: 120px;
+            height: 45px;
+            border-radius: 100px;
+            margin-top: 1rem;
+        }
+        .submitBtn:hover {
+            background-color: hsl(224, 59%, 36%);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="express.html" class="myH1">
+        <h1>Ayan Express</h1>
+    </a>
+    <div class="signUp">
+        <h2>Sign Up</h2>
+        <p>Sign Up with your Google Account</p>
+        <button class="signUpGoogle">
+            <svg width="25" height="25" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path class="google-blue"
+                    d="M24 9.5c3.1 0 5.6 1.1 7.5 2.9l5.6-5.6C33.3 3.1 28.9 1 24 1 14.8 1 7.3 6.9 4.4 15.1l6.8 5.2C13.1 13.5 18 9.5 24 9.5z" />
+                <path class="google-red"
+                    d="M46.5 24.5c0-1.6-.2-3.1-.5-4.5H24v9h12.7c-.6 3-2.2 5.5-4.5 7.3l7 5.4C42.6 38.5 46.5 32.1 46.5 24.5z" />
+                <path class="google-yellow"
+                    d="M10.3 28.1c-.4-1.1-.7-2.3-.7-3.6s.3-2.5.7-3.6l-6.8-5.2C2.5 19.8 1.5 22.8 1.5 25.5s1 5.7 2.7 8.2l6.8-5.6z" />
+                <path class="google-green"
+                    d="M24 46.5c6 0 11.1-2 14.8-5.5l-7-5.4c-2 1.4-4.5 2.2-7.8 2.2-6 0-11-4-12.8-9.5l-6.8 5.2C7.3 41.1 14.8 46.5 24 46.5z" />
+            </svg> Sign Up with Google</button>
+        <p class="or">Or</p>
+        <P>Enter your Email to get started</P>
+        <input type="email" placeholder="Email">
+        <button class="submitBtn">Submit</button>
+    </div>
+</body>
+
+</html>

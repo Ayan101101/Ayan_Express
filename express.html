@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan Express</title>
+    <link rel="stylesheet" href="express.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/d22399eb40.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar starts here -->
+
+    <nav class="ayanExpressMobile">
+        <a href="express.html">Ayan Express</a>
+    </nav>
+
+    <nav class="nav1">
+        <input type="checkbox" id="active" class="check">
+        <ul class="navUl">
+            <li class="iconLabel">
+                <label for="active">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </label>
+            </li>
+            <li class="inviMain , home"><a href="express.html">Home</a></li>
+            <li class="inviMain"><a href="signUp.html">Sign up</a></li>
+            <li class="inviMain"><a href="login.html">Login</a></li>
+            <li class="inviMain"><a href="logout.html">Logout</a></li>
+            <li class="inviMain"><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html"><img class="profile" src="profile.jpg"></a></li>
+        </ul>
+    </nav>
+
+    <nav class="nav2">
+        <a href="express.html" class="ayanExpresspc">Ayan Express</a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart - 2 Products - $878.75</a>
+    </nav>
+
+    <!-- Navbar ends here -->
+
+    <!-- Banner starts here -->
+
+    <div class="bannar">
+        <h1 class="event">2% Discount On The Selected Items</h1>
+        <div class="icon-container">
+            <div class="icon-item">
+                <i class="fa-solid fa-truck-fast fa-2x"></i>
+                <p>Fast delivery</p>
+            </div>
+            <div class="icon-item">
+                <i class="fa-regular fa-comment-dots fa-2x"></i>
+                <p>24/7 support</p>
+            </div>
+            <div class="icon-item">
+                <i class="fa-regular fa-credit-card fa-2x"></i>
+                <p>Payment Safely</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner ends here -->
+
+    <!-- Search bar starts here -->
+
+    <div class="searchBar">
+        <div>
+            <label for="sorting">Sort by : </label>
+            <select id="sorting">
+                <option value="m-sold-l-sold">Most sold to least sold</option>
+                <option value="l-sold-m-sold">Least sold to most sold</option>
+                <option value="m-price-l-price">Most priced to least priced</option>
+                <option value="l-price-m-price">Least priced to most priced</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" placeholder="Search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+    <!-- Search bar ends here -->
+
+    <!-- Main Layout starts here -->
+
+    <main class="main-container">
+        <!-- Aside section starts -->
+
+        <div class="container">
+            <div>
+                <div class="custom">
+                    <h2>Categories</h2>
+                    <input type="checkbox" id="smart-phone">
+                    <label for="smart-phone">Smart Phones</label>
+                </div>
+                <div class="custom">
+                    <input type="checkbox" id="tab">
+                    <label for="tab">Tablets</label>
+                </div>
+                <div class="custom">
+                    <input type="checkbox" id="tv">
+                    <label for="tv">Smart TVs</label>
+                </div>
+                <div class="custom">
+                    <input type="checkbox" id="head-phone">
+                    <label for="head-phone">Headphones</label>
+                </div>
+                <div class="custom">
+                    <input type="checkbox" id="laptop">
+                    <label for="laptop">Laptops</label>
+                </div>
+                <div class="custom">
+                    <input type="checkbox" id="smart-watch">
+                    <label for="smart-watch">Smart Watches</label>
+                </div>
+            </div>
+            <div>
+                <div class="custom">
+                    <h2>Price Range</h2>
+                    <input type="radio" id="10+" name="price">
+                    <label for="10+">$10+</label>
+                </div>
+                <div class="custom">
+                    <input type="radio" id="20-50" name="price">
+                    <label for="20-50">$20-$50</label>
+                </div>
+                <div class="custom">
+                    <input type="radio" id="50+" name="price">
+                    <label for="50+">$50+</label>
+                </div>
+                <div class="custom">
+                    <input type="radio" id="70-120" name="price">
+                    <label for="70-120">$70-$120</label>
+                </div>
+                <div class="custom">
+                    <input type="radio" id="120+" name="price">
+                    <label for="120+">$120+</label>
+                </div>
+            </div>
+            <div>
+                <div class="custom">
+                    <h2>Shipping</h2>
+                    <input type="radio" id="free" name="ship">
+                    <label for="free">Free Shipping</label>
+                </div>
+                <div class="custom">
+                    <input type="radio" id="paid" name="ship">
+                    <label for="paid">Paid Shipping</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aside section ends -->
+
+        <!-- Main section starts -->
+
+        <div class="itemContainer">
+            <div class="itemSection">
+                <div>
+                    <img src="Macbook Air.png">
+                    <h2>Apple Macbook Air M2 13-inch</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ipsum.</p>
+                    <p class="colorItRed">$850 | Free Shipping</p>
+                    <p class="bold">Rating : 4.8/5</p>
+                    <button>Add To Cart!</button>
+                </div>
+                <div>
+                    <img src="Sony WH-CH520.png">
+                    <h2>Sony WH-CH520 Headphone</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ipsum.</p>
+                    <p class="colorItRed">$73.35 | 2.5 on Shipping</p>
+                    <p class="bold">Rating : 4.0/5</p>
+                    <button>Add To Cart!</button>
+                </div>
+                <div>
+                    <img src="Samsung S24.png">
+                    <h2>Samsung Galaxy S24 Ultra</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ipsum.</p>
+                    <p class="colorItRed">$1099.99 | Free Shipping</p>
+                    <p class="bold">Rating : 4.4/5</p>
+                    <button>Add To Cart!</button>
+                </div>
+            </div>
+
+            <div class="itemSection">
+                <div>
+                    <img src="Apple Ultra.png">
+                    <h2>Apple Watch Ultra 2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ipsum.</p>
+                    <p class="colorItRed">$289.99 | 2.5 On Shipping</p>
+                    <p class="bold">Rating : 5/5</p>
+                    <button>Add To Cart!</button>
+                </div>
+                <div>
+                    <img src="Sam Tab Ult.png">
+                    <h2>Samsung Tab S9 Ultra</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ipsum.</p>
+                    <p class="colorItRed">$1199 | Free Shipping</p>
+                    <p class="bold">Rating : 4.2/5</p>
+                    <button>Add To Cart!</button>
+                </div>
+                <div>
+                    <img src="Asus Zenbook.png">
+                    <h2>Asus Zenbook 14-inch OLED</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ipsum.</p>
+                    <p class="colorItRed">$805.47 | Free Shipping</p>
+                    <p class="bold">Rating : 4.5/5</p>
+                    <button>Add To Cart!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main section ends -->
+    </main>
+
+    <div class="btnContainer">
+        <button class="showMore">Show More</button>
+    </div>
+
+    <!-- Main Layout ends here -->
+
+    <!-- Footer starts here -->
+
+    <footer>
+        <div class="subToNewslet">
+            <div>
+                <p>Subscribe to our Newsletter : </p>
+            </div>
+            <div>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div>
+            <p class="bold , footerP">&copy; Copyright, Ayan Express. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Footer ends here -->
+</body>
+
+</html>

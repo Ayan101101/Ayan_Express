@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan Express - Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            font-family: sans-serif;
+            list-style-type: none;
+            text-decoration: none;
+            border: none;
+        }
+        input {
+            cursor: pointer;
+        }
+        body {
+            overflow: hidden;
+        }
+        button {
+            border: none;
+            cursor: pointer;
+            transition: 0.6s;
+            padding: 5px;
+        }
+        button:hover {
+            background-color: rgb(48, 189, 48);
+            color: whitesmoke;
+        }
+        .nav2 {
+            display: flex;
+            background-color: rgb(32, 114, 32);
+            padding: 20px;
+            align-items: center;
+            justify-content: space-around;
+            user-select: none;
+            position: sticky;
+            top: 0;
+            z-index: 3;
+        }
+        .nav2 a {
+            font-size: 22px;
+            color: white;
+            font-family: "Playwrite NZ", sans-serif;
+        }
+        a:hover {
+            color: black;
+            border-bottom: 3px solid;
+            font-weight: bold;
+        }
+
+
+        .main {
+            margin: 4rem 0 0 0.7rem;
+            display: flex;
+            gap: 2rem;
+        }
+        .main div {
+            margin-bottom: 2rem;
+        }
+        .select {
+            width: 40.5rem;
+            padding: 0.8rem;
+        }
+        .select p {
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 0.4rem;
+        }
+        .select button {
+            margin-left: 11.5rem;
+        }
+        .faBtn {
+            padding: 5px;
+            font-size: 18px;
+        }
+        .item {
+            display: flex;
+            width: 40.5rem;
+            position: relative;
+        }
+        .item-control {
+            padding-left: 5.1rem;
+        }
+        .item div {
+            margin: 0 auto;
+            align-content: center;
+        }
+        .item input {
+            margin: 0.7rem;
+        }
+        .item p {
+            display: inline;
+            font-size: 18px;
+        }
+        .item button {
+            font-size: larger;
+            margin: 0.2rem;
+        }
+        .color-it-red {
+            color: red;
+            font-weight: bold;
+        }
+        .paySummary {
+            display: flex;
+            flex-direction: column;
+            width: 40.5rem;
+            padding: 0.7rem;
+            height: fit-content;
+            margin-top: 1.4rem;
+        }
+        .paySummary h2 {
+            margin: 0.35rem 0 0.7rem 0;
+        }
+        .paySummary pre {
+            margin: 0.35rem 0 0.7rem 0.7rem;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .line::after {
+            content: '';
+            display: inline-block;
+            background-color: rgb(105, 105, 105);
+            width: 70px;
+            height: 3px;
+            position: relative;
+            left: -65px;
+            top: 12px;
+        }
+        .payMethods {
+            width: 650px;
+            padding: 20px;
+            height: fit-content;
+            text-align: center;
+        }
+        .payMethods i {
+            font-size: 36px;
+            padding: 17px;
+            margin-top: 10px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+        .payMethods button {
+            background-color: white;
+        }
+        .payMethods button:hover {
+            background-color: rgb(73, 209, 73);
+        }
+        .select, .item, .paySummary, .payMethods {
+            box-shadow: 0 0 8px gray;
+            transition: 0.4s;
+        }
+        .select:hover, .item:hover, .paySummary:hover, .payMethods:hover {
+            box-shadow: 0 0 20px gray;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/d22399eb40.js" crossorigin="anonymous"></script>
+</head>
+
+<body> 
+<!-- .select, .item, .paySummary, .payMethods-->
+    <nav class="nav2">
+        <a href="express.html">Ayan Express</a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart - 2 Products - $878.75</a>
+    </nav>
+
+    <div class="main">
+        <div class="shopingTab">
+            <div class="select">
+                <p>Shopping Cart (2 items)</p>
+                <input type="checkbox" id="select-all">
+                <label for="select-all">Select all items</label>
+                <button class="faBtn"><i class="fa-regular fa-trash-can"></i></button>
+                <button>Shop more!</button>
+            </div>
+
+            <div class="item">
+                <input type="checkbox">
+                <img src="Asus Zenbook.png" width="200px">
+                <div>
+                    <h2>Asus Zenbook 14 OLED</h2>
+                    <p>Price : $805.47</p>
+                    <br>
+                    <p class="color-it-red">Free Shipping</p>
+                </div>
+                <div>
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                    <button>+</button>
+                    <p>1</p>
+                    <button>−</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <input type="checkbox">
+                <img src="Sony WH-CH520.png" width="200px" height="145px">
+                <div>
+                    <h2>Sony WH-CH520</h2>
+                    <p>Price : $73.35</p>
+                    <br>
+                    <p class="color-it-red">$2.5 on Shipping</p>
+                </div>
+                <div class="item-control">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                    <button>+</button>
+                    <p>1</p>
+                    <button>−</button>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <div class="paySummary">
+                <h2>Payment Summary</h2>
+                <pre>Sub-total :                                                                                      $878.75</pre>
+                <pre>Shipping Cost :                                                                                   <span class=" line">$2.5</span></pre>
+                <pre>Total :                                                                                              $881.25</pre>
+                <button>Pay Now!</button>
+            </div>
+            <div class="payMethods">
+                <h2>Payment Methods</h2>
+                <button><i class="fa-brands fa-cc-visa"></i></button>
+                <button><i class="fa-brands fa-google-pay"></i></button>
+                <button><i class="fa-brands fa-cc-apple-pay"></i></button>
+                <button><i class="fa-brands fa-amazon-pay"></i></button>
+                <button><i class="fa-brands fa-paypal"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

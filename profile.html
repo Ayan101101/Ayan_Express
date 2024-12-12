@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan Express - User Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        h1 {
+            background-color: rgb(26, 163, 26);
+            color: white;
+            text-align: center;
+            font-family: "Playwrite NZ";
+            font-size: 55px;
+            padding-top: -20px;
+            padding-bottom: 10px;
+            transition: 0.4s;
+            user-select: none;
+        }
+        .myH1:hover h1 {
+            background-color: rgba(17, 114, 17, 0.952);
+            font-size: 58px;
+            border-bottom: 10px solid black;
+        }
+        h2 {
+            text-align: center;
+            font-size: 35px;
+            margin: 4.5vh 0 4.5vh 0;
+        }
+        img {
+            height: 170px;
+            border: 2px solid;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        p {
+            text-align: center;
+            font-size: 19px;
+            padding-bottom: 0.5rem;
+        }
+        p::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            position: relative;
+            top: 4px;
+        }
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            padding: 0.5rem 0 0.7rem 0;
+        }
+        .user_info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 25px;
+            width: 450px;
+            box-shadow: 3px 3px 7px gray, -3px -3px 7px gray;
+            padding: 15px;
+            transition: 0.6s;
+        }
+        .user_info:hover {
+            box-shadow: 4px 4px 10px gray, -4px -4px 15px gray;
+        }
+        button {
+            cursor: pointer;
+            font-size: 24px;
+            padding: 7px;
+            margin-top: 5px;
+            transition: 0.6s;
+            border: none;
+            background-color: white;
+        }
+        button:hover {
+            background-color: rgb(73, 209, 73);
+            color: white;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/d22399eb40.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <a href="express.html" class="myH1"><h1>Ayan Express</h1></a>
+    <h2>Profile</h2>
+    <div class="user_info">
+        <img src="profile.jpg">
+        <p class="name">Muhats Rahman</p>
+        <p>Email - example123@gmail.com</p>
+        <p>Contact - 012345678910</p>
+        <p>Address - Example address</p>
+        <div>
+        <button><i class="fa-regular fa-pen-to-square"></i></button>
+        <button><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+</body>
+</html>

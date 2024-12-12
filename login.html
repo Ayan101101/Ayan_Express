@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan Express - Login</title>
+    <title>Ayan Express - Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        h1 {
+            background-color: rgb(26, 163, 26);
+            color: white;
+            text-align: center;
+            font-family: "Playwrite NZ", sans-serif;
+            font-size: 55px;
+            padding-top: -20px;
+            padding-bottom: 10px;
+            transition: 0.4s;
+            user-select: none;
+        }
+        .myH1:hover h1 {
+            background-color: rgba(17, 114, 17, 0.952);
+            font-size: 58px;
+            border-bottom: 10px solid black;
+        }
+        .login {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7vh;
+        }
+        h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 1.5vh;
+        }
+        p {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 5.5vh;
+            margin-bottom: 2vh;
+        }
+        input {
+            width: 300px;
+            height: 40px;
+            padding: 5px;
+            margin: 5px;
+            font-size: 17px;
+        }
+        .submitBtn {
+            color: white;
+            background-color: hsl(224, 100%, 59%);
+            width: 130px;
+            height: 45px;
+            margin: 3vh 0 0.5vh 0;
+            text-align: center;
+            border: none;
+            font-size: 22px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.6s;
+        }
+        .submitBtn:hover {
+            background-color: hsl(224, 59%, 36%);
+        }
+    </style>
+</head>
+<body>
+    <a href="express.html" class="myH1"><h1>Ayan Express</h1></a>
+    <div class="login">
+        <h2>Login</h2>
+        <p>Login to an existing account</p>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Passwword">
+        <button class="submitBtn">Submit</button>
+        <p>Don't have an account? <a href="signUp.html">Sign Up</a></p>
+    </div>
+</body>
+</html>
